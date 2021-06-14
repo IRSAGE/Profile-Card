@@ -5,21 +5,41 @@
   padding: 0;
 }
 body {
-  margin: 0px;
-  padding: 0px;
   background: hsl(185, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
-  font-weight: 700;
+  
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(30% at right 90%);
+  background: url("../Image/bg-pattern-bottom.svg");
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(30% at right 90%);
+  background: url("../Image/bg-pattern-top.svg");
 }
 
 .card-container {
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
   background: #fff;
   border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
   overflow: hidden;
   transform: translate(-50%, -50%);
 }
@@ -42,6 +62,7 @@ body {
 }
 .lower-container .upper-text-container p {
   padding: 10px;
+  font-size: 12px;
   color: hsl(227, 10%, 46%);
 }
 hr {
@@ -50,8 +71,8 @@ hr {
   opacity: 0.15;
   margin: 10px;
 }
-h4{
-    font-size: 18px;
+h4 {
+  font-size: 18px;
 }
 
 .lower-container .upper-text-container .user-info {
@@ -74,12 +95,15 @@ h4{
   justify-content: space-evenly;
 }
 
-.lower-container .lower-text-container .text h3 {
-  padding: 10px;
+.lower-container .lower-text-container .text h4 {
+  font-size: 14px;
+  padding: 11px;
 }
 .lower-container .lower-text-container .text p {
   color: hsl(227, 10%, 46%);
-  font-size: 12px;
+  font-size: 11px;
+  padding-left: 2px;
+  font-weight: 800;
 }
 
 .image {
