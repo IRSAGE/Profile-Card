@@ -16,8 +16,9 @@ body {
   font-weight: 400;
 }
 .card-container {
-  width: 330px;
-  height: 330px;
+  display: grid;
+  width: 320px;
+  height: 320px;
   background: #fff;
   border-radius: 10px;
   position: absolute;
@@ -97,7 +98,7 @@ h4 {
   background: #fff;
   border-radius: 50%;
   left: 80%;
-  transform: translate(120px, 70px);
+  transform: translate(110px, 70px);
 }
 
 .image img {
